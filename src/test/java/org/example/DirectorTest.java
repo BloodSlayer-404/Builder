@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.equipment.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
