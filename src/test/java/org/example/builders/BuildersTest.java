@@ -1,5 +1,6 @@
 package org.example.builders;
 
+import org.example.Director;
 import org.example.Zombie;
 import org.example.equipment.*;
 import org.junit.jupiter.api.Test;
@@ -8,6 +9,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BuildersTest {
 
+    /**
+     *  Checks if the {@link HelmetBuilder} resets its {@link Helmet} after
+     *  creating one
+     */
     @Test
     void buildHelmetTest() {
         HelmetBuilder bb = new HelmetBuilder();
@@ -17,6 +22,10 @@ class BuildersTest {
 
     }
 
+    /**
+     *  Checks if the {@link ChesplateBuilder} resets its {@link Chesplate} after
+     *  creating one
+     */
     @Test
     void buildChesplateTest() {
         ChesplateBuilder cb = new ChesplateBuilder();
@@ -25,6 +34,10 @@ class BuildersTest {
         assertNotEquals(chesplate1.toString(), chesplate2.toString());
     }
 
+    /**
+     *  Checks if the {@link LeggingsBuilder} resets its {@link Leggings} after
+     *  creating one
+     */
     @Test
     void buildLeggingsTest() {
         LeggingsBuilder lb = new LeggingsBuilder();
@@ -33,6 +46,10 @@ class BuildersTest {
         assertNotEquals(leggings1.toString(), leggings2.toString());
     }
 
+    /**
+     *  Checks if the {@link BootsBuilder} resets its {@link Boots} after
+     *  creating one
+     */
     @Test
     void buildBootsTest() {
         BootsBuilder bb = new BootsBuilder();
@@ -41,6 +58,10 @@ class BuildersTest {
         assertNotEquals(boots1.toString(), boots2.toString());
     }
 
+    /**
+     *  Checks if the {@link WeaponBuilder} resets its {@link Weapon} after
+     *  creating one
+     */
     @Test
     void buildWeaponTest() {
         WeaponBuilder wb = new WeaponBuilder();
@@ -49,6 +70,10 @@ class BuildersTest {
         assertNotEquals(weapon1.toString(), weapon2.toString());
     }
 
+    /**
+     *  Checks if the {@link ZombieBuilder} resets its {@link Zombie} after
+     *  creating one
+     */
     @Test
     void buildZombieTest() {
         ZombieBuilder zb = new ZombieBuilder();

@@ -14,6 +14,9 @@ class DirectorTest {
         director = new Director();
     }
 
+    /**
+     * Checks if the {@link Director} builds correctly a fully equipped {@link Zombie}
+     */
     @Test
     void hardZombieTest(){
         Zombie zombie = director.constructZombieHard();
@@ -26,6 +29,9 @@ class DirectorTest {
         assertEquals(40, zombie.getHealthPoints());
     }
 
+    /**
+     * Checks if the {@link Director} builds correctly a moderately equipped {@link Zombie}
+     */
     @Test
     void normalZombieTest(){
         Zombie zombie = director.constructZombieNormal();
@@ -38,6 +44,9 @@ class DirectorTest {
         assertEquals(20, zombie.getHealthPoints());
     }
 
+    /**
+     * Checks if the {@link Director} builds correctly an unequipped {@link Zombie}
+     */
     @Test
     void easyZombieTest(){
         Zombie zombie = director.constructZombieEasy();
